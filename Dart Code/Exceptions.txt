@@ -1,0 +1,57 @@
+-----try >> catch ------
+
+import 'dart:io';
+void main () {
+ try {
+  print("Enter Your birth_year :");
+  var birth_years = stdin.readLineSync();
+  var age = DateTime
+      .now()
+      .year - num.parse(birth_years!);
+  print("your age is $age years old ");
+ }
+ catch(e) {
+  print("invalid");
+ }
+}
+
+-----------------------------------------------------------------------
+
+------------- format exception ------------
+
+import 'dart:io';
+void main () {
+ try {
+  print("Enter Your birth_year :");
+  var birth_years = stdin.readLineSync();
+  var age = DateTime.now().year - num.parse(birth_years!);
+  print("your age is $age years old ");
+ }
+on FormatException {
+ print("Enter Your birth_year :");
+ var birth_years = stdin.readLineSync();
+ var age = DateTime.now().year - num.parse(birth_years!);
+ print("your age is $age years old ");
+ }
+ print("done");
+}
+--------------------------------------------
+
+import 'dart:io';
+void main () {
+ for (var i=0 ; i<10;i--){
+  try {
+   print("Enter Your birth_year :");
+   var birth_years = stdin.readLineSync();
+   var age = DateTime.now().year - num.parse(birth_years!);
+   print("your age is $age years old ");
+   break;
+  }
+  on FormatException {
+   print("wrong value");
+
+  }
+
+ }
+}
+

@@ -1,0 +1,73 @@
+ void main () {
+sum (4,5);
+
+}
+sum(x,y){
+  print("x=$x");
+  print("y=$y");
+}
+
+----------------------------------------------
+ void main () {
+sum (4);
+
+}
+sum(x,[y]){
+  print("x=$x");
+  print("y=$y");
+}
+---------------------------------------------------------
+ void main () {
+sum (4,6,a:7);
+
+}
+sum(x,z,{y,s,a}){
+  print("x=$x");
+  print("y=$y");
+  print("s=$s");
+  print("a=$a");
+  print("z=$z");
+
+}
+
+--------------------------------------
+ void main () {
+info();
+
+}
+info({firstName,LastName,age,phone,height}){
+  print("firstName=$firstName");
+  print("LastName=$LastName");
+  print("age=$age");
+  print("phone=$phone");
+  print("height=$height");
+
+}
+-------------------------------------------
+ void main () {
+info(firstName: "ANAS",LastName: "AWNI",age:23, phone: 00962785152268,height: 185 );
+
+}
+info({firstName,LastName,age,phone,height}){
+  print("firstName=$firstName");
+  print("LastName=$LastName");
+  print("age=$age");
+  print("phone=$phone");
+  print("height=$height");
+
+}
+-----------------------------------------------------------------------------------
+ void main () {
+info( "ANAS", "AWNI",age: 23, phone: 0785152268 , height: 185 );
+
+}
+void info( String firstName, String LastName,{required int age, required int phone, required int height}){
+  print("firstName=$firstName");
+  print("LastName=$LastName");
+  print("age=$age");
+  print("phone=$phone");
+  print("height=$height");
+
+}
+-----------------------------------------------------------------------
+

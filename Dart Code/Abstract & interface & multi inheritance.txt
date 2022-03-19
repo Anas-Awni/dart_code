@@ -1,0 +1,64 @@
+ abstract class A {
+  info(){
+    print("Hi");
+
+  }
+ }
+class B extends A {
+
+}
+
+void main(){
+var b= B();
+b.info();
+
+}
+
+-------------------------------------------------------------
+
+ abstract class A {
+  info(){
+
+  }
+ }
+class B extends A {
+info(){
+  print("Hi:2");
+}
+}
+
+void main(){
+var b= B();
+b.info();
+
+}
+--------------------------------------------------------------------
+
+ abstract class A {
+  info1(){
+
+  }
+ }
+class B extends A {
+info2(){
+
+}
+}
+class C implements B,A {
+  @override
+  info1() {
+   print("Hello 1");
+
+  }
+  @override
+  info2() {
+ print("Hello 2");
+  }
+}
+
+void main(){
+var c= C();
+c.info1();
+c.info2();
+
+}

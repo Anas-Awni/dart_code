@@ -1,0 +1,30 @@
+mixin A{
+  info();
+}
+ mixin B{
+ info2();
+}
+abstract class C {
+  info3();
+}
+class D extends C with A ,B  {
+@override
+  info() {
+    print("Hey 1");
+  }
+  @override
+  info2() {
+    print("Hey 2");
+  }
+  @override
+  info3() {
+    print("Hey 3");
+  }
+}
+ main(){
+var d=D();
+d.info();
+d.info2();
+d.info3();
+
+}

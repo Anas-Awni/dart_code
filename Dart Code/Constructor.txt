@@ -1,0 +1,31 @@
+class Human {
+  Human(fname,lname,age, length){
+    print("First Name = ${fname}");
+    print("last Name = ${lname}");
+    print("age = ${age}");
+    print("length = ${length}");
+  }
+}
+main () {
+ var h1=new Human("ANAS", "AWNI", 23, 185);
+ var h2=new Human("BELAL", "AWNI", 26, 187);
+
+
+}
+----------------------------------------------------------
+class Human {
+  Human({fname="ali",lname,age,length}){
+    print("First Name = ${fname}");
+    print("last Name = ${lname}");
+    print("age = ${age}");
+    print("length = ${length}");
+  }
+}
+main () {
+ var h1=new Human(lname: "AWNI",age: 23,length: 185);
+ var h2=new Human(fname: "belal",lname: "AWNI",age: 26,length: 187);
+
+
+}
+-----------------------------------------------
+

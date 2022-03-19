@@ -1,0 +1,183 @@
+main() {
+var s= Shape();
+var c= Circle();
+var r= Rectangle();
+var sq= Square();
+s.info();
+c.info();
+r.info();
+sq.info();
+}
+
+
+class Shape{
+  info(){print("Shape");}
+}
+class Circle extends Shape {
+  @override
+  info() {print("Circle");}
+}
+class Rectangle extends Shape {
+  @override
+  info() {print("Rectangle");}
+}
+
+class Square extends Shape {
+  @override
+  info() {print("Square");}
+}
+
+--------------------------------------------------------------------------------------------------
+
+main() {
+var s= Shape();
+var c= Circle();
+var r= Rectangle();
+var sq= Square();
+
+List <Shape> data=[s,c,r,sq];
+data[0].info();
+data[1].info();
+data[2].info();
+data[3].info();
+}
+
+
+class Shape{
+  info(){print("Shape");}
+}
+class Circle extends Shape {
+  @override
+  info() {print("Circle");}
+}
+class Rectangle extends Shape {
+  @override
+  info() {print("Rectangle");}
+}
+
+class Square extends Shape {
+  @override
+  info() {print("Square");}
+}
+
+------------------------------------------------------------------
+main() {
+var c= Circle();
+var r= Rectangle();
+var sq= Square();
+
+List <Shape> data=[c,r,sq];
+for (var value in data) {
+  print(value.info());
+
+}
+}
+
+
+abstract class Shape{
+  info(){print("Shape");}
+}
+class Circle extends Shape {
+  @override
+  info() {print("Circle");}
+}
+class Rectangle extends Shape {
+  @override
+  info() {print("Rectangle");}
+}
+
+class Square extends Shape {
+  @override
+  info() {print("Square");}
+}
+
+---------------------------------------------
+main() {
+var c= Circle();
+var r= Rectangle();
+var sq= Square();
+
+var a=A();
+a.fun(c);
+a.fun(r);
+a.fun(sq);
+
+
+}
+class A{
+  fun(Shape q){
+    q.info();
+  }
+}
+
+abstract class Shape{
+  info(){print("Shape");}
+}
+class Circle extends Shape {
+  @override
+  info() {print("Circle");}
+}
+class Rectangle extends Shape {
+  @override
+  info() {print("Rectangle");}
+}
+
+class Square extends Shape {
+  @override
+  info() {print("Square");}
+}
+
+----------------------------------------------
+main() {
+var c= Circle();
+var r= Rectangle();
+var sq= Square();
+
+var a=A();
+a.fun(c);
+a.fun(r);
+a.fun(sq);
+
+
+}
+class A{
+  fun(Shape q){
+    q.info();
+  }
+}
+
+abstract class Shape{
+  info(){print("Shape");}
+}
+class Circle extends Shape {
+
+  infoo() {print("Circle");}
+}
+class Rectangle extends Shape {
+  @override
+  info() {print("Rectangle");}
+}
+
+class Square extends Shape {
+  @override
+  info() {print("Square");}
+}
+
+------------------------------------------------------------
+main() {
+var c =Circle();
+c.info();
+c.infoo();
+
+
+}
+
+abstract class Shape{
+  info(){print("Shape");}
+}
+class Circle extends Shape {
+
+  infoo() {print("Circle");}
+}
+
+

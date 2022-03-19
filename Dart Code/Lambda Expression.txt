@@ -1,0 +1,22 @@
+main () {
+  lam1();
+  print (lam2());
+  lam3(3,4);
+  print(lam4(3,4));
+}
+lam1() => print(3 + 4);
+lam2() => 3+4;
+lam3(x,y) => print(x+y);
+lam4(x,y)=> x+y;
+
+
+-------------------------------------------
+
+main () {
+a3(3,4);
+}
+var a1 = () => print(3 + 4);
+var a2 =()=> 3+4;
+var a3 = (x,y)=> print(x+y);
+var a4=(x,y)=> x+y;
+

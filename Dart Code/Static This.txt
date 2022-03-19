@@ -1,0 +1,70 @@
+class Human {
+  static
+  info ({fname,lname,age,length}){
+    print("First Name = ${fname}");
+    print("last Name = ${lname}");
+    print("age = ${age}");
+    print("length = ${length}");
+  }
+}
+main () {
+ Human.info(lname: "AWNI",age: 23,length: 185);
+ Human.info(fname: "belal",lname: "Awni",age: 23,length: 185);
+
+
+}
+
+---------------------------------------------------------------
+class Human {
+  var fname;
+
+  info ({p_fname,lname,age,length}){
+    this.fname=p_fname;
+
+    print("First Name = ${this.fname}");
+    print("last Name = ${lname}");
+    print("age = ${age}");
+    print("length = ${length}");
+  }
+}
+main () {
+  Human h1=new Human();
+ h1.info(lname: "AWNI",age: 23,length: 185);
+  Human h2=new Human();
+  h2.info(p_fname: "AWNI",age: 25,length: 185);
+
+}
+-----------------------------------------------
+
+****************************
+class Human {
+  static String fName;
+  static
+  info([p_fname]){
+    fName=p_fname;
+    print("first name = ${fName}");
+
+  }
+}
+main() {
+Human.info("Anas");
+Human.info("Awni");
+
+}
+------------------------------------------------------------------------
+*******************************************************
+class Human {
+  static String fName;
+
+  Human([p_fname]){
+    fName=p_fname;
+    print("first name = ${fName}");
+
+  }
+}
+main() {
+var h1=new Human("Anas");
+var h2=new Human("Awni");
+
+
+}

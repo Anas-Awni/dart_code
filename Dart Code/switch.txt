@@ -1,0 +1,17 @@
+ main (){
+var x=15;
+switch(x){
+ case 2 :
+  print("this is 2 ");
+  break;
+ case 3 :
+  print("this is 3");
+  break;
+ case 4 :
+  print("this is 4");
+  break;
+ default:
+  print("not valid");
+  break;
+}
+ }

@@ -1,0 +1,29 @@
+lexical closurees
+-------------------------------------------------
+main() {
+  Function fun = () {
+    String message = "Hello";
+    Function say = (String msg) {
+      message = msg;
+      print(message);
+    };
+    return say;
+  };
+  Function f = fun();
+  f("ANAS AWNI");
+}
+
+----------------------------------------------------------------------
+
+Callable Class 
+------------------------------------
+
+main() {
+var human1=Human();
+print(human1("Ali",23));
+}
+class Human{
+  call (String name,int age ){
+    return "Name=$name|| Age=$age";
+  }
+}

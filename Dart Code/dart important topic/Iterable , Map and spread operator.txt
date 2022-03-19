@@ -1,0 +1,141 @@
+void main (){
+  List<int> l=[4,5,6,7,8,9]; // one dimension
+  var li = [ // two dimension
+    [2,4,6],
+    [8,9,4]
+  ];
+  var s={4,5,6,7,8,9 }; // set
+  var m={9:'a',8:'b',7:'c'};// map
+  var x=10;
+  for  (var item in l){
+    print(item);
+  }
+}
+
+--------------------------------------------------------------
+
+void main (){
+ Iterable<int> l=[4,5,6,7,8,9]; // one dimension
+  var li = [ // two dimension
+    [2,4,6],
+    [8,9,4]
+  ];
+  var s={4,5,6,7,8,9 }; // set
+  var m={9:'a',8:'b',7:'c'};// map
+  var x=10;
+  for  (var item in l){
+    print(item);
+  }
+}
+----------------------------------------------------------
+void main (){
+  Iterable<int> l=[4,5,6,7,8,9];
+  var b= l.toList();
+  b.forEach((element) {print(element);});
+}
+
+---------------------------------------------------------------
+
+void main (){
+  Iterable<int> i =[4,5,6,7,8,9];
+
+var list1=[1,2,3];
+var list2=[0, ... list1,[3,3]];
+print(list2);
+}
+
+----------------------------------------------------------------
+void main (){
+  Iterable<int> i =[4,5,6,7,8,9];
+
+var list1=[1,2,3];
+var list2=[0, if(list1.length==3)... list1,[3,3]];
+print(list2);
+}
+--------------------------------------------------
+void main (){
+  Iterable<int> i =[4,5,6,7,8,9];
+
+var list1= null;
+var list2=[0, ...? list1,...[3,3]];
+print(list2);
+}
+
+-----------------------------------------------------
+
+void main () {
+  Iterable<int> i = [4, 5, 6, 7, 8, 9];
+
+ // var list1 = null;
+  //var list2 = [0, ...? list1, ...[3, 3]];
+  //print(list2);
+
+  var a1 = [1, 2.5, 3.2, 4, 5, 6];
+  print(a1.any((element) => element % 2 == 0));
+
+
+}
+--------------------------------------------------------
+
+void main () {
+  Iterable<int> i = [4, 5, 6, 7, 8, 9];
+
+  // var list1 = null;
+  //var list2 = [0, ...? list1, ...[3, 3]];
+  //print(list2);
+
+  var a1 = [1, 2.5, 3.2, 4, 5, 6];
+  print(a1.any((element) => element % 2 == 0));
+  var sum = 0.0;
+  List b = a1.map((e) {
+    sum +=e;
+
+    return e;
+  }).toList();
+  print(b);
+  print(sum);
+}
+----------------------------------------------
+
+---------------------------------------------------------
+
+void main () {
+  Iterable<int> i = [4, 5, 6, 7, 8, 9];
+
+  // var list1 = null;
+  //var list2 = [0, ...? list1, ...[3, 3]];
+  //print(list2);
+
+  var a1 = [1, 2.5, 3.2, 4, 5, 6];
+  print(a1.any((element) => element % 2 == 0));
+  var sum = 0.0;
+  List b = (i as List<int>).map((e) {
+    sum +=e;
+
+    return e;
+  }).toList();
+  print(b);
+  print(sum);
+}
+
+---------------------------------------------------------------
+
+void main () {
+  Iterable<int> i = [4, 5, 6, 7, 8, 9];
+
+  // var list1 = null;
+  //var list2 = [0, ...? list1, ...[3, 3]];
+  //print(list2);
+
+  var a1 = [1, 2.5, 3.2, 4, 5, 6];
+  print(a1.any((element) => element % 2 == 0));
+  List<List<int>> arr =[[1,2,3]];
+  var sum = 0.0;
+  List b = arr[0].map((e) {
+    sum +=e;
+
+    return e;
+  }).toList();
+  print(b);
+  print(sum);
+}

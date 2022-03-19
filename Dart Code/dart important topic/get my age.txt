@@ -1,0 +1,25 @@
+------ birth year ------
+
+
+import 'dart:io';
+void main () {
+  print ("Enter Your birth_year :");
+  var birth_years =stdin.readLineSync();
+  var age =DateTime.now().year -num.parse(birth_years!);
+  print ("your age is $age years old ");
+}
+
+-------------------------------------------------------------------------
+
+-------- get my age ----------
+
+
+
+import 'dart:io';
+void main () {
+  print ("Enter Your Age :");
+  var age =stdin.readLineSync();
+  print ("your age is $age years old ");
+}
+
+--------------------------------------------------------

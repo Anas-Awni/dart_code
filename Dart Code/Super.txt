@@ -1,0 +1,46 @@
+class A{
+var age;
+info(){
+  print("Age=$age");
+}
+}
+class B extends A {
+var age2;
+fun(){
+  this.age2=15;
+  super.age=10;
+  super.info();
+}
+}
+class C extends B {}
+
+main(){
+  var c= C();
+c.fun();
+
+
+}
+
+--------------------------------------------------------------------------------
+
+class A{
+
+info(age){
+  print("Age=$age");
+}
+}
+class B extends A {
+var age2;
+fun(){
+  super.info(10);
+}
+}
+class C extends B {}
+
+main(){
+  var c= C();
+c.fun();
+
+
+
+}

@@ -1,0 +1,89 @@
+class Human{
+  var fname;
+  var lname;
+  var age;
+  var length;
+}
+main () {
+  var h1=Human();
+  h1.fname="Anas";
+  h1.lname="Awni";
+  h1.age=23;
+  h1.length=185;
+
+  print(h1.fname);
+  print(h1.lname);
+  print(h1.age);
+  print(h1.length);
+
+
+}
+----------------------------------------------------------------------------
+class Human{
+  var fname;
+  var lname;
+  var age;
+  var length;
+}
+main () {
+  var h1=Human();
+  h1.fname="Anas";
+  h1.lname="Awni";
+  h1.age=23;
+  h1.length=185;
+
+  print("First Name = ${h1.fname}");
+  print("last Name = ${h1.lname}");
+  print("age = ${h1.age}");
+  print("length = ${h1.length}");
+
+}
+
+---------------------------------------------
+class Human {
+  var fname;
+  var lname;
+  var age;
+  var length;
+
+  info() {
+    print("First Name = ${fname}");
+    print("last Name = ${lname}");
+    print("age = ${age}");
+    print("length = ${length}");
+  }
+}
+main () {
+  var h1=Human();
+  h1.fname="Anas";
+  h1.lname="Awni";
+  h1.age=23;
+  h1.length=185;
+h1.info();
+
+}
+------------------------------------------------------------------------
+
+
+
+class Human {
+  var fname ,lname ,age,length ;
+  
+
+  info() {
+    print("First Name = ${fname}");
+    print("last Name = ${lname}");
+    print("age = ${age}");
+    print("length = ${length}");
+  }
+}
+main () {
+  var h1= new Human()
+ ..fname="Anas"
+.. lname="Awni"
+  ..age=23
+ .. length=185
+..info();
+
+}
+

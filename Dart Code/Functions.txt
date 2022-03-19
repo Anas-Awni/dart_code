@@ -1,0 +1,101 @@
+ main () {
+info();
+}
+info(){
+  print("Hi");
+}
+
+
+-----------------------------------
+ main () {
+  var x=2;
+info(x);
+}
+info(int a){
+  print("a=$a");
+}
+
+
+------------------------------------------
+ main () {
+
+info("Anas");
+}
+info(messages){
+  print("messages=$messages");
+}
+
+------------------------------------
+ main () {
+
+var v1= info(2);
+print(v1);
+}
+info(x){
+return x*x;
+}
+
+---------------------------
+
+ main () {
+
+var v1= sum(3, 5);
+print(v1);
+}
+ sum(x,y){
+return x+y;
+}
+
+------------------------------
+
+main () {
+
+var v1= sum(3, 5);
+print(v1);
+}
+ int sum(int x,int y){
+return x+y;
+}
+
+-------------------------
+ main () {
+fun1();
+print (fun2());
+fun3(3,4);
+print(fun4(3,4));
+}
+fun1() {
+  print(3 + 4);
+}
+fun2(){
+  return 3+4;
+
+}
+fun3(x,y){
+  print(x+y);
+}
+fun4 (x,y){
+  return x+y;
+
+}
+--------------------------------
+ void main () {
+fun1();
+print (fun2());
+fun3(3,4);
+print(fun4(3,4));
+}
+void fun1() {
+  print(3 + 4);
+}
+int fun2(){
+  return 3+4;
+
+}
+void fun3(x,y){
+  print(x+y);
+}
+ int fun4 (x,y){
+  return x+y;
+
+}

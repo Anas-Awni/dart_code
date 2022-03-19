@@ -1,0 +1,44 @@
+---------------Inheritance----------------
+
+class A{ // Indirect super class 
+info(){
+  print("hi");
+}
+}
+class B extends A { // Direct super class 
+  info2(){
+    print("hi:2");
+}
+}
+class C extends B {} // Sub class
+
+main(){
+  var c=new C();
+  c.info();
+  c.info2();
+  
+}
+
+----------------------------------------------------------------------------
+---------------override------------------------------------------------------
+class A{
+info(){
+  print("Hi");
+}
+}
+class B extends A {
+  @override
+  info() {
+  print("Hi : 2");
+  }
+}
+class C extends B {}
+
+main(){
+  var a=new A();
+  var b= B();
+
+  a.info();
+  b.info();
+
+}

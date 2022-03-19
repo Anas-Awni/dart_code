@@ -1,0 +1,20 @@
+main() {
+  final int a1=DateTime.now().year;
+  const int a2=2019;
+  var f=Final(5);
+  print(f.num1);
+}
+class Final {
+  final int num1;
+  static const int num2=7;
+  Final(this.num1);
+}
+
+------------------------------------------------------------------------------
+
+main() {
+  final List a1=['a', 'b','s'];
+  const List a2=['a','b', 's'];
+  a1.add('o');
+  //a2.add('b')
+}

@@ -1,0 +1,42 @@
+main() {
+print(Color.values);
+}
+enum Color {
+  red,blue, black
+}
+
+
+-----------------------------------------------------------
+
+main() {
+print(Color.values.length);// or .black 
+}
+enum Color {
+  red,blue, black
+}
+
+----------------------------------------------------------------
+
+main() {
+print(info(Color.red));
+}
+enum Color {
+  red,blue, black
+}
+info(Color s) {
+  switch (s) {
+    case Color.red:
+    return "red";
+      break;
+    case Color.blue:
+    return "blue";
+      break;
+    case Color.black:
+    return "black";
+      break;
+  }
+}
+
+
+-----------------------------------------------------------------------------------------------
+

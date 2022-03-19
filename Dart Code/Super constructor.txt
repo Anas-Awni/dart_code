@@ -1,0 +1,68 @@
+class A { // super class
+  A (String message) {
+    print("Message=$message");
+
+  }
+}
+class B extends A {//sub class
+B(p_message): super(p_message){
+  print("Message2=$p_message");
+}
+}
+class C extends B {
+  C(p_message) :super(p_message){
+    print("Message3=$p_message");
+  }
+}
+
+main(){
+var c=C("Hello its me");
+
+}
+
+-----------------------------------------------------------------------------
+
+class A { // super class
+  A (String p_message) {
+    print("Message=$p_message");
+
+  }
+}
+class B extends A {//sub class
+B(p_message): super(p_message){
+  print("Message2=$p_message");
+}
+}
+class C extends B {
+  C(p_message) :super(p_message){
+    print("Message3=$p_message");
+  }
+}
+
+main(){
+var c=C("Hello its me");
+
+}
+
+----------------------------------------------
+class A { // super class
+  A (x) {
+    print("Message=$x");
+
+  }
+}
+class B extends A {//sub class
+B(y): super(y){
+  print("Message2=$y");
+}
+}
+class C extends B {
+  C(z) :super(z){
+    print("Message3=$z");
+  }
+}
+
+main(){
+var c=C("Hello its me");
+
+}

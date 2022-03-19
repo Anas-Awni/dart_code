@@ -1,0 +1,39 @@
+void main() {
+  var y =Y();
+  var x=y.casting();
+  x.num=10;
+  print(x.num);
+
+}
+
+class X {
+  late int num;
+}
+class Y {
+  X casting(){
+    X s ;
+    return X();
+  }
+}
+-----------------------------------------------
+ main() {
+var c=Casting<D>();
+var a=c.casting();
+a.info;
+
+}
+class Casting<T>{
+  T casting(){
+    T s;
+    return s;
+
+  }
+}
+
+abstract class X {}
+abstract class Y {}
+abstract class C {}
+abstract class D {
+  info(){print("Hi");}
+}
+abstract class E {}

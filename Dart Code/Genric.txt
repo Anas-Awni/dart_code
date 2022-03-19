@@ -1,0 +1,52 @@
+main(){
+  var a=A();
+  a.x=10;
+  print(a.x);
+  
+
+}
+class A {
+  var x;
+
+}
+
+----------------------------------------------
+
+main(){
+  var a=A<int,double>();
+  a.x=10;
+  a.y=3.4;
+  print(a.x);
+  print(a.y);
+  var b=A<String,bool>();
+b.x="anas";
+b.y=true;
+print(b.x);
+print(b.y);
+}
+class A<T,E> {
+  late T x;
+  late E y;
+
+}
+
+--------------------------------------------------------
+main(){
+  var a=A<int,double>();
+  a.x=10;
+  a.y=3.4;
+  a.info(a.x, a.y);
+  print(a.x);
+  print(a.y);
+  var b=A<String,bool>();
+b.x="anas";
+b.y=true;
+b.info("Hi", false);
+print(b.x);
+print(b.y);
+}
+class A<T,E> {
+  late T x;
+  late E y;
+info(T a , E b){}
+}
